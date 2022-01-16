@@ -12,10 +12,11 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="schedule.php">Schedule</a></li>
+            <li><a href="appoinment.php">Appoinment</a></li>
+            <li><a href="About us.php">About Us</a></li>
+            <li style="float:right; color:wheat; margin-right:20px;"> User Id </li>
         </ul>
     </div>
 </body>

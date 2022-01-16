@@ -1,0 +1,55 @@
+.register {
+    width: 450px;
+    background: #06ffc1;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 30%;
+    float: left;
+}
+
+.register>h1 {
+    text-align: center;
+    color: rgb(56, 0, 0);
+}
+
+.register>form {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+.register>form>p {
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.register>form>input {
+    padding: 10px;
+    width: 85%;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.register>form>input:focus {
+    background-color: rgb(205, 255, 247);
+}
+
+.register>form>button {
+    padding: 10px 40px;
+    margin-top: 5px;
+    margin-left: 35%;
+    float: center;
+    border-radius: 10px;
+    background: rgb(51, 255, 187);
+}
+
+.register>form>button:hover {
+    background-color: rgb(255, 178, 178);
+}
+
+.both {
+    display: inline;
+}
