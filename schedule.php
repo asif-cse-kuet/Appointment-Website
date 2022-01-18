@@ -1,6 +1,10 @@
 <?php
-include 'header.php';
+    session_start();
+    include_once 'connection/connection.php';
+    include 'header.php';
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

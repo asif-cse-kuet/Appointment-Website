@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +13,22 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="schedule.php">Schedule</a></li>
             <li><a href="appoinment.php">Appoinment</a></li>
             <li><a href="About us.php">About Us</a></li>
-            <li style="float:right; color:wheat; margin-right:20px;"> User Id </li>
+            <li style="float:right; color:wheat; margin-right:20px;"> <?php if (isset($_SESSION['session_id'])) { echo $_SESSION['session_id'];} ?> </li>
+            <li id ="u" style="float:right; color:wheat; margin-right:20px;"><a href="connection/session_destroy.php">Log out</a></li>
+            <?php if (!isset($_SESSION['session_id'])) {
+                echo '<script type="text/JavaScript"> 
+                document.getElementById("u").style.display = "none";
+                    </script>'; };
+            ?>
+            
         </ul>
     </div>
+
+
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 <?php
-include 'header.php';
+    session_start();
+    include 'connection/connection.php';
+    include 'header.php';
 ?>
 
 <!DOCTYPE html>
