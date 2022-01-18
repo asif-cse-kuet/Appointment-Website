@@ -2,6 +2,14 @@
     session_start();
     include 'connection/connection.php';
     include 'header.php';
+
+    $Play = true;
+
+    if (isset($_SESSION['status'])){
+        if ($_SESSION['status']=="success"){
+            $Play = false;
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -19,8 +27,9 @@
 
 </head>
 <body>
-
-
+<?php
+    if ($Play):
+?>
     <div class="both">
 
         <!-- LOGIN FORM -->
@@ -97,5 +106,10 @@
         </div>
 
     </div>
+<?php else: ?>
+    <p> Logged in successfully </p>
+<?php endif; ?>
+
+
 </body>
 </html>

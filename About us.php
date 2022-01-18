@@ -13,9 +13,9 @@
     <title>Document</title>
 </head>
 <body>
-        <?php
+        <!-- <?php
         include 'footer.php';
-        ?>
+        ?> -->
 
         <script>
             var upload = document.getElementById[upload];
